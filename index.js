@@ -16,12 +16,6 @@ app.use(session({
   saveUninitialized : false
 }));
 
-app.use(express.static("client/build"));
-
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-});
-
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -138,5 +132,12 @@ MongoClient.connect('mongodb+srv://Registration:charangoc30@cluster0.fga0d.mongo
     });
   }
   })
+
+  app.use(express.static("client/build"));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+
  
 })
