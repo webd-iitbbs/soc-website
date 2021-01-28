@@ -6,9 +6,6 @@ const passport = require('passport');
 const session = require('cookie-session');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const path = require('path')
-var user;
-
-
 
 app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -58,7 +55,6 @@ MongoClient.connect('mongodb+srv://Registration:charangoc30@cluster0.fga0d.mongo
     function(token, refreshToken, profile, done) {
       console.log('HI');
       console.log(profile);
-      user=profile;
       
 
       
@@ -86,7 +82,7 @@ MongoClient.connect('mongodb+srv://Registration:charangoc30@cluster0.fga0d.mongo
     }
   ))
 
-  app.get('/auth/google', 
+  app.get('/', 
     passport.authenticate('google', { scope : ['profile', 'email'] })
   );
 
