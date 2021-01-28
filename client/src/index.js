@@ -14,7 +14,7 @@ import AdminLayout from "layouts/Admin.js";
 const hist = createBrowserHistory();
 
 ReactDOM.render(
-  <Router history={hist}>
+  <Router>
     <Switch>
       <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
     </Switch>
