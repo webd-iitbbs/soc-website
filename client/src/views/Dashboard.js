@@ -30,6 +30,8 @@ class Dashboard extends React.Component {
                   <p className="card-category">After every week you will have an assessment to check your understanding</p>
                   <p className="card-category">After this workshop, you will get a basic idea about web devolepment</p>
                   <p className="card-category">Proceed to dashboard and find links for Week1 and Week2</p>
+                  <p className="card-category">Login with your Institute mailId</p>
+                  <a href="/auth/google"><button type="button" class="btn btn-outline-info" >LOGIN</button></a>
                 </CardHeader>
                
                 <CardFooter>
