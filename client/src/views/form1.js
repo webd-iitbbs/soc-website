@@ -41,7 +41,7 @@ class Form1 extends React.Component {
     handleSubmit(values) {
       console.log('Current State is: ' + JSON.stringify(values));
       alert('ok');
-      axios.post('/submit1', {
+      axios.post('./submit1', {
         qone:values.qone,
         qtwo:values.qtwo,
         qthree:values.qthree,
@@ -70,7 +70,7 @@ class Form1 extends React.Component {
                 
                 </CardHeader>
                 <CardBody>
-                <form method="POST" onSubmit={(Values) => this.handleSubmit} >
+                <form onSubmit={(Values) => this.handleSubmit} >
             <div className="form-group">
               <label for="qone">Question 1</label>
               <h5>Capital of AMERICA</h5>
