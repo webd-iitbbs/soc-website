@@ -176,11 +176,11 @@ class Header extends React.Component {
                 <DropdownToggle caret nav>
              
                   <p>
-                  <i className='nc-icon nc-single-02' /> ANDE CHARAN SAI
+                  <img src="{this.state.user.photo}"/> {this.state.user.name}
                   </p>
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <a href='/Admin/Week1'><DropdownItem tag="a">LOGOUT</DropdownItem></a>
+                  <a href='/logout'><DropdownItem tag="a">LOGOUT</DropdownItem></a>
                  
                 </DropdownMenu>
               </Dropdown>
