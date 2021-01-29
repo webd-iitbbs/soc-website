@@ -24,7 +24,7 @@ class Form1 extends React.Component {
       };
   
       this.handleChange = this.handleInputChange.bind(this);
-      this.handleSubmit = this.handleSubmit.bind(this);
+      this.handleSubmit = this.onSubmit.bind(this);
     }
     
     handleInputChange(event) {
@@ -49,7 +49,7 @@ class Form1 extends React.Component {
     //       //access the results here....
     //     });
     // }
-    handleSubmit= (e) => {
+    onSubmit= (e) => {
       e.preventDefault();
       console.log('Current State is: ' + JSON.stringify(this.state));
       alert('ok');
@@ -84,7 +84,7 @@ class Form1 extends React.Component {
                 <CardBody>
                 <p className="card-category">Yet to be released</p>
                 
-                <form  onSubmit={(Values) => this.handleSubmit} >
+                <form  onSubmit={this.handleSubmit} >
             <div className="form-group">
               <label for="qone">Question 1</label>
               <h5>Capital of AMERICA</h5>
