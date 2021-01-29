@@ -38,22 +38,34 @@ class Form1 extends React.Component {
       console.log('Change detected. State updated' + name + ' = ' + value);
     }
   
-    handleSubmit(values) {
+    
+    // onSubmit = (e) => {
+    //   e.preventDefault();
+    //   // get our form data out of state
+    //   const { fname, lname, email } = this.state;
+  
+    //   axios.post('/', { fname, lname, email })
+    //     .then((result) => {
+    //       //access the results here....
+    //     });
+    // }
+    handleSubmit= (e) => {
+      e.preventDefault();
       console.log('Current State is: ' + JSON.stringify(values));
       alert('ok');
-      axios.post('/submit1', {
-        qone:values.qone,
-        qtwo:values.qtwo,
-        qthree:values.qthree,
-        qfour:values.qfour,
-        qfive:values.qfive,
-        qsix:values.qsix
-      }).then(function(){
-        console.log('submitted to backed');
-      })
-      .catch(function (error){
-        console.log(error);
-    })
+    //   axios.post('/submit1', {
+    //     qone:values.qone,
+    //     qtwo:values.qtwo,
+    //     qthree:values.qthree,
+    //     qfour:values.qfour,
+    //     qfive:values.qfive,
+    //     qsix:values.qsix
+    //   }).then(function(){
+    //     console.log('submitted to backed');
+    //   })
+    //   .catch(function (error){
+    //     console.log(error);
+    // })
       
     }
   
