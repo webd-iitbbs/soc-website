@@ -40,9 +40,10 @@ class Form1 extends React.Component {
   
     handleSubmit = (e) => {
       e.preventDefault();
-      // get our form data out of state
+      console.log('submit fired');
+
       const { qone, qtwo, qthree, qfour, qfive, qsix } = this.state;
-  
+      console.log(this.state);
       axios.post('/', {qone, qtwo, qthree, qfour, qfive, qsix })
         .then((result) => {
           console.log(result);
