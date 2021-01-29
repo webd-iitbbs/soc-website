@@ -181,7 +181,7 @@ class Header extends React.Component {
                 <DropdownToggle caret nav>
              
                   <p>
-                  <img src="{this.state.user.photo}"/> {this.state.user.name}
+                  <img src={this.state.user.photo}/> {this.state.user.name}
                   </p>
                 </DropdownToggle>
                 <DropdownMenu right>
