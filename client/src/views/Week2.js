@@ -31,16 +31,16 @@ import {
                   <ul class="fa-ul pl-4">
                     <li style={{color:'Black',fontSize:'20px'}}><i class="fa-li fa fa-caret-right " aria-hidden="true" ></i>CSS</li>
                       <ul >
-                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="#" style={{color:'#00cdb3'}}>Introduction</a></li>
-                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="#" style={{color:'#00cdb3'}}>Types of CSS</a></li>
-                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="#" style={{color:'#00cdb3'}}>CSS Background elements</a></li>
-                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="#" style={{color:'#00cdb3'}}>CSS Borders</a></li>                        
-                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="#" style={{color:'#00cdb3'}}>CSS text styling and formatting</a></li>
-                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="#" style={{color:'#00cdb3'}}>Google Fonts</a></li>
-                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="#" style={{color:'#00cdb3'}}>Margin and Padding in CSS</a></li>
-                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="#" style={{color:'#00cdb3'}}>Color Combination</a></li>
-                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="#" style={{color:'#00cdb3'}}>Advanced CSS</a></li>
-                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="#" style={{color:'#00cdb3'}}>Mobile Responsiveness</a></li>
+                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="https://webdiitbbs.slab.com/posts/introducion-diu9ysqu" style={{color:'#00cdb3'}}>Introduction</a></li>
+                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="https://webdiitbbs.slab.com/posts/types-of-css-3dblvpti" style={{color:'#00cdb3'}}>Types of CSS</a></li>
+                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="https://webdiitbbs.slab.com/posts/css-background-elements-oba4gxx5" style={{color:'#00cdb3'}}>CSS Background elements</a></li>
+                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="https://webdiitbbs.slab.com/posts/css-borders-s6i22c1b" style={{color:'#00cdb3'}}>CSS Borders</a></li>                        
+                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="https://webdiitbbs.slab.com/posts/css-text-styling-and-formatting-h1df4fda" style={{color:'#00cdb3'}}>CSS text styling and formatting</a></li>
+                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="https://webdiitbbs.slab.com/posts/google-fonts-abhcgqm3" style={{color:'#00cdb3'}}>Google Fonts</a></li>
+                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="https://webdiitbbs.slab.com/posts/margin-and-padding-in-css-jb2h7us2" style={{color:'#00cdb3'}}>Margin and Padding in CSS</a></li>
+                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="https://webdiitbbs.slab.com/posts/color-combination-5osaat58" style={{color:'#00cdb3'}}>Color Combination</a></li>
+                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="https://webdiitbbs.slab.com/posts/advanced-css-2p8k9146" style={{color:'#00cdb3'}}>Advanced CSS</a></li>
+                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="https://webdiitbbs.slab.com/posts/mobile-responsiveness-su10tnve" style={{color:'#00cdb3'}}>Mobile Responsiveness</a></li>
                       </ul>
                   </ul>
 
