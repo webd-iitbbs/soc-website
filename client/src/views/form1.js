@@ -49,7 +49,7 @@ class Form1 extends React.Component {
         qfour:this.state.qfour,
         qfive:this.state.qfive,
         qsix:this.state.qsix
-      }, {headers:{"Content-Type" : "application/json"}} ).then(result => {
+      }, {headers:{"Accept": "application/json","Content-Type" : "application/json"}} ).then(result => {
         console.log('submitted to backed');
         console.log(result);
       })
