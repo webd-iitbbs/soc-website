@@ -76,7 +76,7 @@ MongoClient.connect('mongodb+srv://Registration:charangoc30@cluster0.fga0d.mongo
     }
   ))
 
-  app.get('/', 
+  app.get('/auth/google', 
     passport.authenticate('google', { scope : ['profile', 'email'] })
   );
 
