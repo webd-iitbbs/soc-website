@@ -39,34 +39,24 @@ class Form1 extends React.Component {
     }
   
     
-    // onSubmit = (e) => {
-    //   e.preventDefault();
-    //   // get our form data out of state
-    //   const { fname, lname, email } = this.state;
-  
-    //   axios.post('/', { fname, lname, email })
-    //     .then((result) => {
-    //       //access the results here....
-    //     });
-    // }
     onSubmit= (e) => {
       e.preventDefault();
       console.log('Current State is: ' + JSON.stringify(this.state));
-      alert('ok');
-    //   axios.post('/submit1', {
-    //     qone:values.qone,
-    //     qtwo:values.qtwo,
-    //     qthree:values.qthree,
-    //     qfour:values.qfour,
-    //     qfive:values.qfive,
-    //     qsix:values.qsix
-    //   }).then(function(){
-    //     console.log('submitted to backed');
-    //   })
-    //   .catch(function (error){
-    //     console.log(error);
-    // })
-      
+      const { qone, qtwo, qthree, qfour, qfive, qsix } = this.state;
+  
+      axios.post('/submit1', {
+        qone, qtwo, qthree, qfour, qfive, qsix
+      }).then(result => {
+        console.log('submitted to backend');
+        console.log(result);
+      })
+      .catch(function (error){
+        console.log(error);
+      })
+    }
+
+    componentDidMount(){
+      alert('You can submit the assessment only once');
     }
   
     render() {
