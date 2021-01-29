@@ -14,9 +14,10 @@ import AdminLayout from "layouts/Admin.js";
 const hist = createBrowserHistory();
 
 ReactDOM.render(
-  <Router>
+  <Router history={hist}>
     <Switch>
       <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
+      <Redirect to="/admin/dashboard" />
     </Switch>
   </Router>,
   document.getElementById("root")

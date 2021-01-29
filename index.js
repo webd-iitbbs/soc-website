@@ -127,7 +127,7 @@ MongoClient.connect('mongodb+srv://Registration:charangoc30@cluster0.fga0d.mongo
       if (err) {
         return next(err);
       } else {
-        res.render('/');
+        res.redirect('https://webdsociety.herokuapp.com/');
       }
     });
   }
