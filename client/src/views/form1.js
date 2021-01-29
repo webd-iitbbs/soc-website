@@ -51,7 +51,7 @@ class Form1 extends React.Component {
     // }
     handleSubmit= (e) => {
       e.preventDefault();
-      console.log('Current State is: ' + JSON.stringify(values));
+      console.log('Current State is: ' + JSON.stringify(this.state));
       alert('ok');
     //   axios.post('/submit1', {
     //     qone:values.qone,
