@@ -13,6 +13,9 @@ import {
   
   
   class Week2 extends React.Component {
+    componentDidMount(){
+      alert('Proceed to Week 2 only if you have completed week 1');
+    }
     render() {
       return (
         <>

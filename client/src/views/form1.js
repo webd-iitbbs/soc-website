@@ -70,8 +70,9 @@ class Form1 extends React.Component {
                 
                 </CardHeader>
                 <CardBody>
-                {
-                  <p className="card-category">Yet to be released</p>/* <form  onSubmit={(Values) => this.handleSubmit} >
+                <p className="card-category">Yet to be released</p>
+                
+                <form  onSubmit={(Values) => this.handleSubmit} >
             <div className="form-group">
               <label for="qone">Question 1</label>
               <h5>Capital of AMERICA</h5>
@@ -105,7 +106,7 @@ class Form1 extends React.Component {
           
           
             <input type="submit" value="Submit" className="btn btn-primary"  />
-          </form> */}
+          </form> 
                 </CardBody>
                 <CardFooter>
                   <hr />

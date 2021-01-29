@@ -139,6 +139,9 @@ class Header extends React.Component {
         <DropdownToggle caret nav>
           <p>Guest</p>
         </DropdownToggle>
+        <DropdownMenu right>
+        <a href='/auth/google'><DropdownItem tag="a">LOGIN</DropdownItem></a>
+      </DropdownMenu>
       </>
     );
   }
