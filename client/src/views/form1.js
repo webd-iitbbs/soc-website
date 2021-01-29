@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, {Component} from "react";
 import {
   Card,
@@ -37,9 +38,23 @@ class Form1 extends React.Component {
       console.log('Change detected. State updated' + name + ' = ' + value);
     }
   
-    handleSubmit(event) {
-      alert('A form was submitted: ' + this.state.name + ' // ' + this.state.email);
-      event.preventDefault();
+    handleSubmit(values) {
+      console.log('Current State is: ' + JSON.stringify(values));
+      alert('ok');
+      axios.post('/submit1', {
+        qone:values.qone,
+        qtwo:values.qtwo,
+        qthree:values.qthree,
+        qfour:values.qfour,
+        qfive:values.qfive,
+        qsix:values.qsix
+      }).then(function(){
+        console.log('submitted to backed');
+      })
+      .catch(function (error){
+        console.log(error);
+    })
+      
     }
   
     render() {
@@ -55,7 +70,7 @@ class Form1 extends React.Component {
                 
                 </CardHeader>
                 <CardBody>
-                <form onSubmit={this.handleSubmit} >
+                <form  onSubmit={(Values) => this.handleSubmit} >
             <div className="form-group">
               <label for="qone">Question 1</label>
               <h5>Capital of AMERICA</h5>
