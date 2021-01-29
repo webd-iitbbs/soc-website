@@ -46,7 +46,12 @@ class Header extends React.Component {
       isOpen: false,
       dropdownOpen: false,
       color: "transparent",
-      user: ""
+      user: {_id: "", 
+              googleid: "", 
+              token: "", 
+              name: "Guest", 
+              email: "",
+              photo: ""}
     };
     this.toggle = this.toggle.bind(this);
     this.dropdownToggle = this.dropdownToggle.bind(this);
