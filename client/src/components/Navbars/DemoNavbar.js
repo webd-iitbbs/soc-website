@@ -127,6 +127,21 @@ class Header extends React.Component {
       this.sidebarToggle.current.classList.toggle("toggled");
     }
   }
+  name(){
+    return (
+      this.state.name ?  <>
+        <DropdownToggle caret nav>
+          <p>Guest</p>
+        </DropdownToggle>
+      </> : <>
+      <DropdownToggle caret nav>
+        <p><img src={this.state.user.photo} width="34px"/>{this.state.name}</p>
+      </DropdownToggle>
+      <DropdownMenu right>
+        <a href='/logout'><DropdownItem tag="a">LOGOUT</DropdownItem></a>
+      </DropdownMenu></>
+    );
+  }
   render() {
     return (
       // add or remove classes depending if we are on full-screen-maps page or not
@@ -178,16 +193,7 @@ class Header extends React.Component {
                 isOpen={this.state.dropdownOpen}
                 toggle={(e) => this.dropdownToggle(e)}
               >
-                <DropdownToggle caret nav>
-             
-                  <p>
-                  <img src={this.state.user.photo}/> this.state.name ? {this.state.name} : Guest
-                  </p>
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <a href='/logout'><DropdownItem tag="a">LOGOUT</DropdownItem></a>
-                 
-                </DropdownMenu>
+               {this.name()}
               </Dropdown>
              
             </Nav>
