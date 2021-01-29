@@ -29,7 +29,7 @@ var routes = [
   {
     path: "/dashboard",
     name: "Dashboard",
-    icon: "nc-icon nc-bank",
+    icon: "nc-icon nc-shop",
     component: Dashboard,
     layout: "/admin",
   },
@@ -43,21 +43,21 @@ var routes = [
   {
     path: "/Week1",
     name: "Week1",
-    icon: "nc-icon nc-book-bookmark",
+    icon: "nc-icon nc-paper",
     component: Week1,
     layout: "/admin",
   },
   {
     path: "/Week2",
     name: "Week2",
-    icon: "nc-icon nc-book-bookmark",
+    icon: "nc-icon nc-paper",
     component: Week2,
     layout: "/admin",
   },
   {
     path: "/Form1",
     name: "Assessment1",
-    icon: "nc-icon nc-book-bookmark",
+    icon: "nc-icon nc-hat-3",
     component: Form1,
     layout: "/admin",
   },

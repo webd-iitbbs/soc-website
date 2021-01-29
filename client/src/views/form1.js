@@ -38,21 +38,24 @@ class Form1 extends React.Component {
       console.log('Change detected. State updated' + name + ' = ' + value);
     }
   
-    handleSubmit = (e) => {
-      e.preventDefault();
-      console.log('submit fired');
-
-      const { qone, qtwo, qthree, qfour, qfive, qsix } = this.state;
-      console.log(this.state);
-      axios.post('/', {qone, qtwo, qthree, qfour, qfive, qsix })
-        .then((result) => {
-          console.log(result);
-        })
-        .catch(function (error){
-          console.log(error);
-        })
+    handleSubmit(values) {
+      console.log('Current State is: ' + JSON.stringify(values));
+      alert('ok');
+      axios.post('/submit1', {
+        qone:values.qone,
+        qtwo:values.qtwo,
+        qthree:values.qthree,
+        qfour:values.qfour,
+        qfive:values.qfive,
+        qsix:values.qsix
+      }).then(function(){
+        console.log('submitted to backed');
+      })
+      .catch(function (error){
+        console.log(error);
+    })
+      
     }
-    
   
     render() {
       return (
@@ -67,7 +70,8 @@ class Form1 extends React.Component {
                 
                 </CardHeader>
                 <CardBody>
-                <form onSubmit={(Values) => this.handleSubmit} >
+                {
+                  <p className="card-category">Yet to be released</p>/* <form  onSubmit={(Values) => this.handleSubmit} >
             <div className="form-group">
               <label for="qone">Question 1</label>
               <h5>Capital of AMERICA</h5>
@@ -101,7 +105,7 @@ class Form1 extends React.Component {
           
           
             <input type="submit" value="Submit" className="btn btn-primary"  />
-          </form>
+          </form> */}
                 </CardBody>
                 <CardFooter>
                   <hr />
