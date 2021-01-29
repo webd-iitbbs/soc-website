@@ -70,7 +70,7 @@ class Form1 extends React.Component {
                 
                 </CardHeader>
                 <CardBody>
-                <form  onSubmit={(Values) => this.handleSubmit} >
+                <form method="POST" action="/submit1"  onSubmit={(Values) => this.handleSubmit} >
             <div className="form-group">
               <label for="qone">Question 1</label>
               <h5>Capital of AMERICA</h5>
