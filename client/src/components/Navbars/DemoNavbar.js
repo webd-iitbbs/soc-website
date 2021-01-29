@@ -129,13 +129,13 @@ class Header extends React.Component {
   }
   name(){
     return (
-      this.state.name ?  <>
+      this.state.user.name ?  <>
         <DropdownToggle caret nav>
           <p>Guest</p>
         </DropdownToggle>
       </> : <>
       <DropdownToggle caret nav>
-        <p><img src={this.state.user.photo} width="34px"/>{this.state.name}</p>
+        <p><img src={this.state.user.photo} width="34px"/>{this.state.user.name}</p>
       </DropdownToggle>
       <DropdownMenu right>
         <a href='/logout'><DropdownItem tag="a">LOGOUT</DropdownItem></a>
