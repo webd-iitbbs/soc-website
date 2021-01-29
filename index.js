@@ -121,17 +121,10 @@ MongoClient.connect('mongodb+srv://Registration:charangoc30@cluster0.fga0d.mongo
   })
  
   
-  app.get('/logout', (req, res) => {
-    if (req.session) {
-    req.session.destroy(function (err) {
-      if (err) {
-        return next(err);
-      } else {
-        res.redirect('https://webdsociety.herokuapp.com/');
-      }
-    });
-  }
-  })
+  app.get('/logout', function(req, res){
+    req.logout();
+    res.redirect('https://webdsociety.herokuapp.com/');
+  });
 
   app.use(express.static("client/build"));
 
