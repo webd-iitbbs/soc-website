@@ -38,14 +38,14 @@ import {
 
                     <li style={{color:'black',fontSize:'20px'}}><i class="fa-li fa fa-caret-right" aria-hidden="true" ></i>Version control using Git</li>
                       <ul >
-                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="https://webdiitbbs.slab.com/posts/git-and-git-hub-9l6lumy9" style={{color:'#00cdb3'}}>GitHub</a></li>
+                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="https://webdiitbbs.slab.com/public/9l6lumy9" style={{color:'#00cdb3'}}>GitHub</a></li>
                       </ul>
 
                     <br/>
 
                     <li style={{color:'black',fontSize:'20px'}}><i class="fa-li fa fa-caret-right" aria-hidden="true" ></i>HTML</li>
                       <ul >
-                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="https://webdiitbbs.slab.com/posts/html-9xekegmy" style={{color:'#00cdb3'}}>HTML</a></li>
+                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="https://webdiitbbs.slab.com/public/9xekegmy" style={{color:'#00cdb3'}}>HTML</a></li>
                       </ul>
                     <br/>
 
