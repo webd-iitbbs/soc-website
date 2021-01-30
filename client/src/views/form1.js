@@ -39,7 +39,7 @@ class Form1 extends React.Component {
     }
   
     
-    onSubmit= (e) => {
+    onSubmit = (e) => {
       e.preventDefault();
       console.log('Current State is: ' + JSON.stringify(this.state));
       axios.post('/submit1', {
@@ -51,7 +51,7 @@ class Form1 extends React.Component {
         qsix:this.state.qsix
       }, {headers:{"Accept": "application/json","Content-Type" : "application/json"}} ).then(result => {
         console.log('submitted to backed');
-        console.log(result);
+        console.log(result.data);
       })
       .catch(function (error){
         console.log(error);
