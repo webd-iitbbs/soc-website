@@ -38,11 +38,11 @@ class Dashboard extends React.Component {
   loginState(){
     return (
       this.state.user.name ?  <>
+      
+      </>: <>
       <p className="card-category">Login with your Institute mailId (if you haven't, if you have logged in you won't be seeing this, lol :)</p>
       <p className="card-category">Login with the same email, so that we an track your progress..</p>
       <a href="/auth/google"><button type="button" class="btn btn-outline-info" >LOGIN</button></a>
-      </>: <>
-        
       </>
     );
   }
