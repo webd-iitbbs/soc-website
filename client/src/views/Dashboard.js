@@ -39,12 +39,6 @@ some of the important concepts of JavaScript. </p>
                   <p className="card-category">Login with the same email, so that we an track your progress..</p>
                   <a href="/auth/google"><button type="button" class="btn btn-outline-info" >LOGIN</button></a>
                 </CardHeader>
- 
-
-To make sure you have gained knowledge out of it, we will be assessing you on the weekends. 
-
-What are you waiting for ? 
-Grab the chance, and head to webd-iitbbs.herokuapp.com to register for the workshop.
                
                 <CardFooter>
                   <hr />
