@@ -55,7 +55,7 @@ import {
                   <CardFooter>
                     <hr />
                     <div className="stats">
-                      CSS
+                      CSS, JS
                     </div>
                   </CardFooter>
                 </Card>

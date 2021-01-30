@@ -42,9 +42,7 @@ some of the important concepts of JavaScript. </p>
                
                 <CardFooter>
                   <hr />
-                  <div className="stats">
-                    HTML,CSS,GITHUB
-                  </div>
+                  
                 </CardFooter>
               </Card>
             </Col>
