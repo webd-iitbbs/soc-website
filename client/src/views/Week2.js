@@ -35,8 +35,8 @@ import {
                     <li style={{color:'Black',fontSize:'20px'}}><i class="fa-li fa fa-caret-right " aria-hidden="true" ></i>CSS</li>
                       <ul >
                       
-                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="https://webdiitbbs.slab.com/posts/advanced-css-2p8k9146" style={{color:'#00cdb3'}}>Advanced CSS</a></li>
-                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="https://webdiitbbs.slab.com/posts/mobile-responsiveness-su10tnve" style={{color:'#00cdb3'}}>Mobile Responsiveness</a></li>
+                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="https://webdiitbbs.slab.com/public/2p8k9146" style={{color:'#00cdb3'}}>Advanced CSS</a></li>
+                        <li style={{color:'#00cdb3',fontSize:'18px'}}><a href="https://webdiitbbs.slab.com/public/su10tnve" style={{color:'#00cdb3'}}>Mobile Responsiveness</a></li>
                       </ul>
                   </ul>
 
