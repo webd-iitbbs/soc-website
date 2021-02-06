@@ -43,7 +43,7 @@ MongoClient.connect('mongodb+srv://Registration:charangoc30@cluster0.fga0d.mongo
   passport.use(new GoogleStrategy({
       clientID        : '364666460910-2oc6p3bv5gksk6317rspfem897rvns12.apps.googleusercontent.com',
       clientSecret    : 'zvUMuk3kjsy2kPxp9Hv8hLz1',
-      callbackURL     : 'https://socdashboard.herokuapp.com/auth/google/callback',
+      callbackURL     : 'http://localhost:5000/auth/google/callback',
       userProfileURL  : 'https://www.googleapis.com/oauth2/v3/userinfo'
     },
     function(token, refreshToken, profile, done) {
@@ -96,26 +96,29 @@ MongoClient.connect('mongodb+srv://Registration:charangoc30@cluster0.fga0d.mongo
   });
   
   app.post('/submit1', (req, res)=>{
+    console.log('requested');
+    console.log(req.body)
+    var data = req.body;
     var update = { $set : {
-      "week1.$.qone": req.body.qone,
-      "week1.$.qtwo": req.body.qtwo,
-      "week1.$.qthree": req.body.qthree,
-      "week1.$.qfour": req.body.qfour,
-      "week1.$.qfive": req.body.qfive,
-      "week1.$.qsix": req.body.qsix,
+      "qone": data.qone,
+      "qtwo": data.qtwo,
+      "qthree": data.qthree,
+      "qfour": data.qfour,
+      "qfive": data.qfive,
+      "qsix": data.qsix,
 
     } };
     
     
     db.collection('users').findOneAndUpdate(
-      { "email" : req.user.email },
+      { "name" : req.user.name },
       update, function(err,doc) {
         if (err) {
-          return next(err);
+          throw err;
         } else {
          console.log(doc);
-         alert('Submirtted Successfully');
-         res.redirect('/admin/Form1', 200,  {userData:user});
+        //  alert('Submirtted Successfully');
+         res.sendStatus(200);
         }
       })
   })
