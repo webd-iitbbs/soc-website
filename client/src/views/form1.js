@@ -94,6 +94,9 @@ class Form1 extends React.Component {
             console.log(response);
         })
     }
+  componentDidMount(){
+    alert('Make sure you have logged in before attempting the assessment');
+  }
   
     render() {
       return (
