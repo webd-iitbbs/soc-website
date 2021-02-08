@@ -43,7 +43,7 @@ MongoClient.connect('mongodb+srv://Registration:charangoc30@cluster0.fga0d.mongo
   passport.use(new GoogleStrategy({
       clientID        : '364666460910-2oc6p3bv5gksk6317rspfem897rvns12.apps.googleusercontent.com',
       clientSecret    : 'zvUMuk3kjsy2kPxp9Hv8hLz1',
-      callbackURL     : 'http://webdsociety.herokuapp.com/auth/google/callback',
+      callbackURL     : 'http://socdashboard.herokuapp.com/auth/google/callback',
       userProfileURL  : 'https://www.googleapis.com/oauth2/v3/userinfo'
     },
     function(token, refreshToken, profile, done) {
