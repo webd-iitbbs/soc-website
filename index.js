@@ -108,8 +108,7 @@ MongoClient.connect('mongodb+srv://Registration:charangoc30@cluster0.fga0d.mongo
       "qsix": data.qsix,
 
     } };
-    
-    
+   
     db.collection('users').findOneAndUpdate(
       { "name" : req.user.name },
       update, function(err,doc) {
@@ -122,7 +121,45 @@ MongoClient.connect('mongodb+srv://Registration:charangoc30@cluster0.fga0d.mongo
         }
       })
   })
- 
+
+  app.post('/submit2', (req, res)=>{
+    console.log('requested');
+    console.log(req.body)
+    var data = req.body;
+    var update = { $set : {
+      "qtwentyone": data.qtwentyone,
+      "qtwentytwo": data.qtwentytwo,
+      "qtwentythree": data.qtwentythree,
+      "qtwentyfour": data.qtwentyfour,
+      "qtwentyfive": data.qtwentyfive,
+      "qtwentysix": data.qtwentysix,
+      "qtwentyseven": data.qtwentyseven,
+      "qtwentyeight": data.qtwentyeight,
+      "qtwentynine": data.qtwentynine,
+      "qthirty": data.qthirty,
+      "qthirtyone": data.qthirtyone,
+      "qthirtytwo": data.qthirtytwo,
+      "qthirtythree": data.qthirtythree,
+      "qthirtyfour": data.qthirtyfour,
+      "qthirtyfive": data.qthirtyfive,
+      "qthirtysix": data.qthirtysix,
+      "qthirtyseven": data.qthirtyseven,
+      "qthirtyeight": data.qthirtyeight,
+
+    } };
+    db.collection('users').findOneAndUpdate(
+      { "name" : req.user.name },
+      update, function(err,doc) {
+        if (err) {
+          throw err;
+        } else {
+         console.log(doc);
+        //  alert('Submirtted Successfully');
+         res.sendStatus(200);
+        }
+      })
+  })
+
   
   app.get('/logout', function(req, res){
     req.logout();
