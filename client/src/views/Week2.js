@@ -49,7 +49,7 @@ import {
                   <br/>
 
                   <p style={{color:'black',fontSize:'20px'}}>Check your understanding!</p>
-                  <button type="button" class="btn btn-outline-info ">Weekly Assessment</button>
+                  <a href='/admin/Form2'><button type="button" class="btn btn-outline-info ">Weekly Assessment</button></a>
                 </div>
                   </CardBody>
                   <CardFooter>
