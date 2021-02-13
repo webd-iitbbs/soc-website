@@ -129,19 +129,19 @@ class Form2 extends React.Component {
             </div>
             <div className="form-group">
               <label for="qtwentyfour">Question 4</label>
-              <h6>What change will the following code bring in webpage? <br />
- " box-shadow: 7px 4px #696969"
-</h6>
+              <h6>What change will the following code bring in webpage?</h6> 
+ <p>box-shadow: 7px 4px #696969</p>
+
               <input type="text" name="qtwentyfour" value={this.state.qfour} onChange={this.handleChange} className="form-control" id="qtwentyfour"  />
             </div>
             <div className="form-group">
               <label for="qtwentyfive">Question 5</label>
-              <h6>If “first” is class of div element . What output will be created by 2nd and 3rd line of the following piece of statements? <br /> <br />
-    .first <br />
+              <h6>If “first” is class of div element . What output will be created by 2nd and 3rd line of the following piece of statements?</h6> <br /> 
+    <p>.first <br />
      grid-column: 1 / 3;<br />
-     grid-row: 2/4;
+     grid-row: 2/4;</p>
     
-</h6>
+
               <input type="text" name="qtwentyfive" value={this.state.qfive} onChange={this.handleChange} className="form-control" id="qtwentyfive"  />
             </div>
             <div className="form-group">
@@ -181,10 +181,10 @@ class Form2 extends React.Component {
 
             <div className="form-group">
               <label for="qthirtytwo">Question 12</label>
-              <h6>What is alerted from the following code?
-              var aBoolean = 'true';
-	alert((aBoolean == 'false' ? 'High' : 'Low'));
-</h6>
+              <h6>What is alerted from the following code?</h6>
+              <p>var aBoolean = 'true';
+	alert((aBoolean == 'false' ? 'High' : 'Low'));</p>
+
               <input type="text" name="qthirtytwo" value={this.state.qtwelve} onChange={this.handleChange} className="form-control" id="qthirtytwo"  />
             </div>
 
