@@ -18,6 +18,7 @@
 */
 import Dashboard from "views/Dashboard.js";
 import Form1 from "views/form1";
+import Form2 from "views/form2";
 
 import Icons from "views/Icons.js";
 
@@ -59,6 +60,13 @@ var routes = [
     name: "Assessment1",
     icon: "nc-icon nc-hat-3",
     component: Form1,
+    layout: "/admin",
+  },
+  {
+    path: "/Form2",
+    name: "Assessment2",
+    icon: "nc-icon nc-hat-3",
+    component: Form2,
     layout: "/admin",
   },
   
