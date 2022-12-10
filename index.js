@@ -41,9 +41,9 @@ MongoClient.connect('mongodb+srv://Registration:charangoc30@cluster0.fga0d.mongo
   })
 
   passport.use(new GoogleStrategy({
-      clientID        : '364666460910-2oc6p3bv5gksk6317rspfem897rvns12.apps.googleusercontent.com',
-      clientSecret    : 'zvUMuk3kjsy2kPxp9Hv8hLz1',
-      callbackURL     : 'https://socdashboard.herokuapp.com/auth/google/callback',
+      clientID        : '275436600547-827fs70tsjjbvvt1ls3c3q62kmglqsjd.apps.googleusercontent.com',
+      clientSecret    : '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',
+      callbackURL     : 'https://workshop.webnd-iitbbs.org/auth/google/callback',
       userProfileURL  : 'https://www.googleapis.com/oauth2/v3/userinfo'
     },
     function(token, refreshToken, profile, done) {
@@ -163,7 +163,7 @@ MongoClient.connect('mongodb+srv://Registration:charangoc30@cluster0.fga0d.mongo
   
   app.get('/logout', function(req, res){
     req.logout();
-    res.redirect('https://webdsociety.herokuapp.com/');
+    res.redirect('https://workshop.webnd-iitbbs.org/');
   });
 
   app.use(express.static("client/build"));
