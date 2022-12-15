@@ -43,14 +43,14 @@ var routes = [
   // },
   {
     path: "/Week1",
-    name: "Week1",
+    name: "Part1",
     icon: "nc-icon nc-paper",
     component: Week1,
     layout: "/admin",
   },
   {
     path: "/Week2",
-    name: "Week2",
+    name: "Part2",
     icon: "nc-icon nc-paper",
     component: Week2,
     layout: "/admin",

@@ -92,9 +92,9 @@ class Form2 extends React.Component {
             console.log(response);
         })
     }
-  componentDidMount(){
-    alert('Make sure you have logged in before attempting the assessment');
-  }
+  // componentDidMount(){
+  //   alert('Make sure you have logged in before attempting the assessment');
+  // }
   
     render() {
       return (
@@ -105,13 +105,13 @@ class Form2 extends React.Component {
             <Col md="12">
               <Card>
                 <CardHeader>
-                  <CardTitle tag="h5">FORM2</CardTitle>
+                  <CardTitle tag="h5">ASSESSMENT 2</CardTitle>
                 
                 </CardHeader>
                 <CardBody>
                 {/* <p className="card-category">Yet to be released</p> */}
                 
-                <form onSubmit={this.handleSubmit}>
+                {/* <form onSubmit={this.handleSubmit}>
             <div className="form-group">
               <label for="qtwentyone">Question 1</label>
               <h6>We can adjust boxes in CSS using “float” . Name an alternative of it and how it is better than float.</h6>
@@ -223,7 +223,9 @@ class Form2 extends React.Component {
           
           
             <input type="submit" value="Submit" className="btn btn-primary"  />
-          </form> 
+          </form>  */}
+
+<a href="https://forms.gle/yeprKR9G9981vvfR7" target="_blank"><button type="button" class="btn btn-outline-info" >Take Assessment 2</button></a>
                 </CardBody>
                 <CardFooter>
                   <hr />

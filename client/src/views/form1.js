@@ -94,9 +94,9 @@ class Form1 extends React.Component {
             console.log(response);
         })
     }
-  componentDidMount(){
-    alert('Make sure you have logged in before attempting the assessment');
-  }
+  // componentDidMount(){
+  //   alert('Make sure you have logged in before attempting the assessment');
+  // }
   
     render() {
       return (
@@ -107,13 +107,13 @@ class Form1 extends React.Component {
             <Col md="12">
               <Card>
                 <CardHeader>
-                  <CardTitle tag="h5">FORM1</CardTitle>
+                  <CardTitle tag="h5">ASSESSMENT 1</CardTitle>
                 
                 </CardHeader>
                 <CardBody>
                 {/* <p className="card-category">Yet to be released</p> */}
                 
-                <form onSubmit={this.handleSubmit}>
+                {/* <form onSubmit={this.handleSubmit}>
             <div className="form-group">
               <label for="qone">Question 1</label>
               <h6>A frontend cum backend developer using a common platform across the entire stack is known as</h6>
@@ -221,7 +221,9 @@ class Form1 extends React.Component {
           
           
             <input type="submit" value="Submit" className="btn btn-primary"  />
-          </form> 
+          </form>  */}
+
+<a href="https://forms.gle/2dKyMeFJomCaeHev7" target="_blank"><button type="button" class="btn btn-outline-info" >Take Assessment 1</button></a>
                 </CardBody>
                 <CardFooter>
                   <hr />

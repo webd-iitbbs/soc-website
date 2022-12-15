@@ -14,7 +14,7 @@ import {
   
   class Week2 extends React.Component {
     componentDidMount(){
-      alert('Proceed to Week 2 only if you have completed week 1');
+      alert('Proceed to Part 2 only if you have completed Part 1');
     }
     render() {
       return (
@@ -49,7 +49,7 @@ import {
                   <br/>
 
                   <p style={{color:'black',fontSize:'20px'}}>Check your understanding!</p>
-                  <a href='/admin/Form2'><button type="button" class="btn btn-outline-info ">Weekly Assessment</button></a>
+                  <a href='/admin/Form2'><button type="button" class="btn btn-outline-info ">Assessment 2</button></a>
                 </div>
                   </CardBody>
                   <CardFooter>
